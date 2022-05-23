@@ -3,11 +3,10 @@ const Products = require('../models/Product');
 
 addProducts = function (req, res, next) {
     const product = new Products({
-        productID: req.body.productId,
+        productId: req.body.productId,
         productname: req.body.productname,
         price: req.body.price,
         quantity: req.body.quantity,
-        image: req.file.path
     });
     product.save().
         then(resault => {
@@ -61,11 +60,10 @@ getoneProduct = function(req, res, next) {
 
 updateProducts = function (req, res, next) {
     const newProduct = {
-        productID: req.body.productId,
+        productId: req.body.productId,
         productname: req.body.productname,
         price: req.body.price,
         quantity: req.body.quantity,
-        image: req.file.path
     }
     Products.updateOne({ _id: req.params.id }, { $set: newProduct }).
         then(resault => {

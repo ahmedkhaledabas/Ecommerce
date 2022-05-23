@@ -16,9 +16,6 @@ const productsSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    image: {
-        type: String,
-    },
     category : {
         // type : Array,
         type: mongoose.Schema.Types.ObjectId,

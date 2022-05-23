@@ -24,7 +24,7 @@ signupUser = function (req, res, next) {
                             then(resault => {
                                 console.log(resault);
                                 res.status(200).json({
-                                    massage: 'User Already Created'
+                                    massage: 'User Created Success'
                                 })
                             }).
                             catch(err => {
