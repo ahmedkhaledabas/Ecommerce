@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "752d92a7-f49b-4392-9242-f0c9475cafac",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addproduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\" : \"3\",\r\n    \"productname\" : \"S30\",\r\n    \"price\" : \"9500\" ,\r\n    \"quantity\" : \"9\",\r\n    \"category\" : \"mobile\" ,\r\n    \"brand\" : \"samsung\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/addProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"addProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/getProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Mahmoud\",\r\n    \"password\" : \"123457\",\r\n    \"usermail\" : \"mahmoud@gmail.com\",\r\n    \"phone\" : \"012345678\",\r\n    \"birthday\" : \"1999\",\r\n    \"gender\" : \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"alaa\",\r\n    \"password\" : \"1234578\",\r\n    \"usermail\" : \"alaa@gmail.com\",\r\n    \"phone\" : \"012345678\",\r\n    \"birthday\" : \"1999\",\r\n    \"gender\" : \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addbrand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand_id\" : \"1\",\r\n    \"brand_name\" : \"apple\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/brands/addBrands",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"brands",
+						"addBrands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbrand",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/brands/getBrands",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"brands",
+						"getBrands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addcategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\" : \"8\",\r\n    \"category_name\" : \"electronic\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/Category/addCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Category",
+						"addCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get category",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "addproduct",
+			"value": "localhost:3000/products/addProducts",
+			"type": "default"
+		},
+		{
+			"key": "getproduct",
+			"value": "localhost:3000/products/getProducts",
+			"type": "default"
+		},
+		{
+			"key": "signup",
+			"value": "localhost:3000/users/signup",
+			"type": "default"
+		},
+		{
+			"key": "signin",
+			"value": "localhost:3000/users/signin",
+			"type": "default"
+		},
+		{
+			"key": "signup2",
+			"value": "localhost:3000/users/signup",
+			"type": "default"
+		},
+		{
+			"key": "addbrand",
+			"value": "localhost:3000/brands/addBrands",
+			"type": "default"
+		},
+		{
+			"key": "addcategory",
+			"value": "localhost:3000/brands/addCategory",
+			"type": "default"
+		}
+	]
+}

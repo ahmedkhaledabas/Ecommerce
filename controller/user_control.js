@@ -62,7 +62,7 @@ signinUser = function (req, res, next) {
                                 expiresIn: '10h'
                             });
                             res.status(200).json({
-                                massage: 'Successful Sign In',
+                                massage: 'Welcome To you',
                                 token: token
                             });
                         } else {

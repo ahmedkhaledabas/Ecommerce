@@ -15,17 +15,18 @@ const productsSchema = mongoose.Schema({
     quantity: {
         type: Number,
         required: true
-    },
-    category : {
-        // type : Array,
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Category',
-    },
-    brands : {
-        type: mongoose.Schema.Types.ObjectId,
-        // type : Array,
-        ref: 'Brands',
     }
+    // },
+    // category : {
+    //     // type : Array,
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Category',
+    // },
+    // brands : {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     // type : Array,
+    //     ref: 'Brands',
+    // }
 });
 
 module.exports = mongoose.model('Products', productsSchema);
