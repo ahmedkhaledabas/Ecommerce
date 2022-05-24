@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const brandsSchema = mongoose.Schema({
+    // _id : mongoose.Schema.Types.ObjectId,
     brand_id: {
         type: Number,
         required: true

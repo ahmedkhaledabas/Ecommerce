@@ -1,8 +1,10 @@
+const mongoose = require ('mongoose');
 const Brands = require('../models/Brands');
 
 
 addBrands = function (req, res, next) {
     const brand = new Brands({
+        // _id : mongoose.Types.ObjectId,
         brand_id : req.body.brand_id,
         brand_name: req.body.brand_name
     });
@@ -27,7 +29,7 @@ addBrands = function (req, res, next) {
 }
 
 getBrands = function (req, res, next) {
-    brand.find().then(resault => {
+    Brands.find().then(resault => {
             res.status(200).json({
                 massage: resault
             });
@@ -42,6 +44,7 @@ getBrands = function (req, res, next) {
 
 updateBrands = function (req, res, next) {
     const newBrand = {
+        // _id : mongoose.Types.ObjectId(),
         brand_id : req.body.brand_id,
         brand_name: req.body.brand_name
     }
@@ -60,7 +63,7 @@ updateBrands = function (req, res, next) {
 }
 
 deleteBrands = function (req, res, next) {
-    brand.deleteOne({ _id: req.params.id }).
+    Brands.deleteOne({ _id: req.params.id }).
         then(resault => {
             res.status(200).json({
                 massage: 'Brand deleted Successfully',

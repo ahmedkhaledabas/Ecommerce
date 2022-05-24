@@ -4,6 +4,7 @@ const Products = require('../models/Product');
 addProducts = function (req, res, next) {
     const product = new Products({
         productId: req.body.productId,
+        // _id : mongoose.Types.ObjectId,
         productname: req.body.productname,
         price: req.body.price,
         quantity: req.body.quantity,

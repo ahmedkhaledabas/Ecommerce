@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const productsSchema = mongoose.Schema({
+    
     productId : {
         type : Number,
         require : true

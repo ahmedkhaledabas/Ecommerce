@@ -29,7 +29,7 @@ addCategory = function (req, res, next) {
 }
 
 getCategory = function (req, res, next) {
-    category.find().then(resault => {
+    Category.find().then(resault => {
             res.status(200).json({
                 massage: resault
             });
@@ -62,7 +62,7 @@ updateCategory = function (req, res, next) {
 }
 
 deleteCategory = function (req, res, next) {
-    category.deleteOne({ _id: req.params.id }).
+    Category.deleteOne({ _id: req.params.id }).
         then(resault => {
             res.status(200).json({
                 massage: 'Category deleted Successfully',
